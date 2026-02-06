@@ -33,7 +33,7 @@ wget -O ~/.local/bin/fcount <url_to_binary>
 chmod +x ~/.local/bin/fcount
 ```
 
-`Note: Ensure ~/.local/bin is in your $PATH.`
+*Note: Ensure ~/.local/bin is in your $PATH.*
 
 ### Option 2: Build from Source
 
