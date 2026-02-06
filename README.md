@@ -54,4 +54,4 @@ Comparison on a directory with ~1,200 files on M2 CPU:
 | `gdu --inodes` | 3.8 ms | 2.2 ms | 1.18x slower |
 | `ls -1 \| wc -l` | 6.8 ms | 2.8 ms | 2.12x slower |
 
-*Benchmark run using `hyperfine -N` to isolate binary speed*
+*Benchmark run using `hyperfine -N`*.
