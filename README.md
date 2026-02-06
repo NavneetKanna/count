@@ -1,4 +1,4 @@
-## Count
+## fcount
 
 A command line tool to count the number of files in a directory.
 You might wonder what is the need of this tool when we can do either of the following
@@ -27,10 +27,10 @@ You can download or copy the URL of the pre-compiled binary for Linux or macOS f
 mkdir -p ~/.local/bin
 
 # Download and rename (Replace <url> with the link from Releases)
-wget -O ~/.local/bin/count <url_to_binary>
+wget -O ~/.local/bin/fcount <url_to_binary>
 
 # Make it executable
-chmod +x ~/.local/bin/count
+chmod +x ~/.local/bin/fcount
 ```
 
 `Note: Ensure ~/.local/bin is in your $PATH.`
@@ -38,7 +38,7 @@ chmod +x ~/.local/bin/count
 ### Option 2: Build from Source
 
 ```bash
-git clone https://github.com/NavneetKanna/count
-cd count
+git clone https://github.com/NavneetKanna/fcount
+cd fcount
 RUSTFLAGS="-C opt-level=3" cargo install
 ```
