@@ -40,5 +40,5 @@ chmod +x ~/.local/bin/count
 ```bash
 git clone https://github.com/NavneetKanna/count
 cd count
-cargo install
+RUSTFLAGS="-C opt-level=3" cargo install
 ```
