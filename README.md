@@ -1,6 +1,6 @@
 ## Count
 
-This is a command line tool to count the number of files in the current directory.
+A command line tool to count the number of files in a directory.
 You might wonder what is the need of this tool when we can do either of the following
 
 ```bash
@@ -11,7 +11,34 @@ du --inodes
 
 Well the answer is simple:
 
-- This is a good project to start to learn rust.
+- This was a good project for me to learn rust.
 - The commands are intuitive for counting the number of files. Sure we can create alias, but these 
   commands are not exclusively meant for counting.
 - Better output formatting.
+
+## Installation
+
+### Option 1: Binary Download
+
+You can download or copy the URL of the pre-compiled binary for Linux or macOS from the [Releases Page](https://github.com/NavneetKanna/count/releases).
+
+```bash
+# Create the directory if it doesn't exist
+mkdir -p ~/.local/bin
+
+# Download and rename (Replace <url> with the link from Releases)
+wget -O ~/.local/bin/count <url_to_binary>
+
+# Make it executable
+chmod +x ~/.local/bin/count
+```
+
+`Note: Ensure ~/.local/bin is in your $PATH.`
+
+### Option 2: Build from Source
+
+```bash
+git clone https://github.com/NavneetKanna/count
+cd count
+cargo install
+```
