@@ -42,3 +42,16 @@ git clone https://github.com/NavneetKanna/fcount
 cd fcount
 RUSTFLAGS="-C opt-level=3" cargo install
 ```
+
+## Performance
+
+**Benchmark Results:**
+Comparison on a directory with ~1,200 files on M2 CPU:
+
+| Command | Mean Time | System Time (Kernel) | Relative Speed |
+| :--- | :--- | :--- | :--- |
+| **`fcount`** | **3.2 ms** | **1.1 ms** | **1.0x** |
+| `gdu --inodes` | 3.8 ms | 2.2 ms | 1.18x slower |
+| `ls -1 \| wc -l` | 6.8 ms | 2.8 ms | 2.12x slower |
+
+*Benchmark run using `hyperfine -N` to isolate binary speed*
